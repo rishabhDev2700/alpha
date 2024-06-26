@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzydevs</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Staatliches&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white dark:bg-neutral-900 dark:text-white antialiased">
+    <div id="navigation-bar"
+        class="flex flex-col lg:flex-row sticky top-0 xl:w-full lg:justify-between z-50  bg-white/50 dark:bg-neutral-900/40 backdrop-blur-md p-2 shadow-md shadow-black/20">
+        <div class="flex justify-between items-center px-8 lg:ml-24 lg:w-1/5 z-50">
+            <header class="text-4xl font-staatliches underline">Fuzzydevs</header>
+            <button class="p-1 lg:hidden" id="menu-button">
+                <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"
+                    fill="currentColor">
+                    <path d="M18 18V20H6V18H18ZM21 11V13H3V11H21ZM18 4V6H6V4H18Z"></path>
+                </svg>
+                <svg id="menu-close" class="hidden dark:text-white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                    <path
+                        d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav
+            class="fixed top-14 left-0 w-screen bg-white lg:bg-transparent dark:bg-neutral-900 lg:dark:bg-transparent h-[80vh] lg:h-auto flex flex-col lg:flex-row text-5xl -translate-x-full lg:translate-x-0 duration-200 lg:static lg:text-lg lg:items-center lg:justify-around lg:w-4/5 font-major font-bold z-50">
+            <div class="flex flex-col lg:flex-row lg:justify-center lg:w-2/3">
+
+                <a class="py-4 my-1 hover:bg-gradient-to-br hover:from-blue-400 hover:via-sky-400 hover:to-violet-400 hover:text-white hover:shadow-md hover:shadow-black/20 hover:dark:bg-neutral-950 px-4 lg:py-1 lg:w-auto rounded-2xl duration-200 ease-in lg:mx-2 hover:scale-105"
+                    href="#projects">Projects</a>
+                <a class="py-4 my-1 hover:bg-gradient-to-br hover:from-blue-400 hover:via-sky-400 hover:to-violet-400 hover:text-white hover:shadow-md hover:shadow-black/20 hover:dark:bg-neutral-950 px-4 lg:py-1 lg:w-auto rounded-2xl duration-200 ease-in lg:mx-2 hover:scale-105"
+                    href="#learn">Learn to Code</a>
+                <a class="py-4 my-1 hover:bg-gradient-to-br hover:from-blue-400 hover:via-sky-400 hover:to-violet-400 hover:text-white hover:shadow-md hover:shadow-black/20 hover:dark:bg-neutral-950 px-4 lg:py-1 lg:w-auto rounded-2xl duration-200 ease-in lg:mx-2 hover:scale-105"
+                    href="#contact">Contact</a>
+                <a class="py-4 my-1 hover:bg-gradient-to-br hover:from-blue-400 hover:via-sky-400 hover:to-violet-400 hover:text-white hover:shadow-md hover:shadow-black/20 hover:dark:bg-neutral-950 px-4 lg:py-1 lg:w-auto rounded-2xl duration-200 ease-in lg:mx-2 hover:scale-105"
+                    href="/about.html">About</a>
+            </div>
+            <button
+                class="py-4 my-1 hover:bg-slate-200 hover:dark:bg-neutral-950 px-4 lg:py-2 mx-auto lg:w-min lg:mx-4 rounded-full"
+                id="theme-button" class="">
+                <svg id="sun" class="duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                    height="48" fill="currentColor">
+                    <path
+                        d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                    </path>
+                </svg>
+                <svg id="moon" class="duration-200 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    width="48" height="48" fill="currentColor">
+                    <path
+                        d="M11.3807 2.01886C9.91573 3.38768 9 5.3369 9 7.49999C9 11.6421 12.3579 15 16.5 15C18.6631 15 20.6123 14.0843 21.9811 12.6193C21.6613 17.8537 17.3149 22 12 22C6.47715 22 2 17.5228 2 12C2 6.68514 6.14629 2.33869 11.3807 2.01886Z">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+    </div>
+    <!-- Start of content -->
+    <section class="relative h-section">
+        <img class="absolute top-56 left-2 md:top-52 md:left-12 hover:scale-105 duration-500 z-0"
+            src="./assets/3d-glassy-plush-blue-creature-with-playful-eyes-and-a-quirky-grin.png">
+        <h1 class="absolute top-12 md:top-48 font-staatliches text-5xl xl:w-1/2 lg:right-1/4 text-center">
+            High Quality and Robust Software solutions
+        </h1>
+    </section>
+    <section id="services" class="">
+        <h2 class="text-4xl mx-12 font-major">Services</h2>
+        <div class="flex flex-wrap justify-evenly px-8 mx-12 my-8">
+            <div class="flex flex-col justify-center items-center text-center h-96 lg:w-1/3">
+                <img class="w-44 h-44 object-contain" src="./assets/web.png">
+                <em class="text-4xl xl:text-2xl my-4">Full stack Development</em>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center h-96 lg:w-1/3">
+                <img class="w-44 h-44 object-contain" src="./assets/mobile.png">
+                <em class="text-4xl xl:text-2xl my-4">Mobile App Development</em>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center h-96 lg:w-1/3">
+                <img class="w-44 h-44 object-contain animate-bounce duration-300" src="./assets/3d-mini-chatbot.png">
+                <em class="text-4xl xl:text-2xl my-4">Learn to code</em>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="">
+        <h2 class="text-4xl mx-12 my-8 font-major sticky top-16">Projects</h2>
+        <div class="mx-2 lg:mx-12">
+            <a href="">
+                <div
+                    class="h-section sticky top-28 left-0 py-4 px-8 rounded-t-3xl text-white bg-gradient-to-br from-blue-500 to-blue-950  z-30 shadow-lg shadow-black/30 overflow-hidden">
+                    <div class="flex justify-between py-2">
+                        <span class="text-2xl">01</span>
+                        <div class="flex w-96 uppercase">
+                            <div class="px-2 py-1 mx-2">Web</div>
+                            <div class="px-2 py-1 mx-2">Fullstack</div>
+                            <div class="px-2 py-1 mx-2">Django</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="py-2">
+                        <h2 class="text-5xl font-staatliches">69INVOICES</h2>
+                        <img class="w-full rounded-t-2xl h-96 lg:h-[70vh] object-cover object-top"
+                            src="https://cdn.dribbble.com/userupload/5366143/file/original-656f6da20450c1722a342fbc7ecbc6b3.png?resize=1200x900">
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="h-section sticky top-28 left-0 py-4 px-8 rounded-t-3xl text-white bg-gradient-to-br from-neutral-600 to-neutral-950  z-30 shadow-lg shadow-black/30 overflow-hidden">
+                    <div class="flex justify-between py-2">
+                        <span class="text-2xl">02</span>
+                        <div class="flex w-96 uppercase">
+                            <div class="px-2 py-1 mx-2">Web</div>
+                            <div class="px-2 py-1 mx-2">Fullstack</div>
+                            <div class="px-2 py-1 mx-2">Django</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="py-2">
+                        <h2 class="text-5xl font-staatliches">Grafeen</h2>
+                        <img class="w-full rounded-t-2xl h-96 lg:h-[70vh] object-cover object-top"
+                            src="https://cdn.dribbble.com/userupload/7181275/file/original-0195c435e3220921f159c513731c69ae.png?resize=1200x900&vertical=center">
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div
+                    class="h-section sticky top-28 left-0 py-4 px-8 rounded-t-3xl text-white bg-gradient-to-br from-zinc-600 to-zinc-950  z-30 shadow-lg shadow-black/30 overflow-hidden">
+                    <div class="flex justify-between py-2">
+                        <span class="text-2xl">03</span>
+                        <div class="flex w-96 uppercase">
+                            <div class="px-2 py-1 mx-2">Web</div>
+                            <div class="px-2 py-1 mx-2">Fullstack</div>
+                            <div class="px-2 py-1 mx-2">NextJs</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="py-2">
+                        <h2 class="text-5xl font-staatliches">PlayersHub</h2>
+                        <img class="w-full rounded-t-2xl h-96 lg:h-[70vh] object-cover object-top"
+                            src="https://cdn.dribbble.com/users/2117939/screenshots/16753965/media/f696b497e1536ece8fdf054bdba0bba3.png?resize=1000x750&vertical=center">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="testimonials" class="">
+        <h2 class="text-4xl mx-12 my-8 font-major sticky top-28">Testimonials</h2>
+        <div class="mx-2 lg:mx-12">
+            <div
+                class="h-section sticky top-40 left-0 p-8 rounded-t-3xl bg-gradient-to-br from-rose-500 to-rose-950  z-30 shadow-lg shadow-black/30">
+                4</div>
+            <div
+                class="h-section sticky top-40 left-0 p-8 rounded-t-3xl bg-gradient-to-br from-purple-500 to-purple-950  z-30 shadow-lg shadow-black/30">
+                6</div>
+            <div
+                class="h-section sticky top-40 left-0 p-8 rounded-t-3xl bg-gradient-to-br from-cyan-500 to-cyan-950  z-30 shadow-lg shadow-black/30">
+                7</div>
+            <div
+                class="h-section sticky top-40 left-0 p-8 rounded-t-3xl bg-gradient-to-br from-teal-500 to-teal-950  z-30 shadow-lg shadow-black/30">
+                5</div>
+
+        </div>
+    </section>
+
+
+
+    <footer
+        class="bg-white dark:bg-neutral-950 border-t-2 border-neutral-300 dark:border-black dark:text-white py-4 mt-12 px-12 pt-8">
+        Illustrations by <br><a class="bg-neutral-200 dark:text-slate-700 hover:bg-neutral-400 p-2 mx-1 rounded-md"
+            href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a>,<a
+            class="bg-neutral-200 dark:text-slate-700 hover:bg-neutral-400 p-2 mx-1 rounded-md"
+            href="https://icons8.com/illustrations/author/DETSVS1CxEMr">Polina G</a>,<a
+            class="bg-neutral-200 dark:text-slate-700 hover:bg-neutral-400 p-2 mx-1 rounded-md"
+            href="https://icons8.com/illustrations/author/xFjpTYeUGo1J">Anastasiia Putintseva</a><br>
+        from <a class="bg-neutral-200 dark:text-slate-700 hover:bg-neutral-400 p-2 mx-1 rounded-md"
+            href="https://icons8.com/illustrations">Ouch!</a><br>
+        <p class="text-center text-xl font-major font-black mt-8">
+            © 2024 Fuzzydevs. All rights reserved.
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
